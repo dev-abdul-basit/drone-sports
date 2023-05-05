@@ -1,8 +1,9 @@
 import 'package:drone_sports/constants.dart';
-import 'package:drone_sports/screens/home/home_screen.dart';
+
 import 'package:drone_sports/tabs.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:overlay_support/overlay_support.dart';
 
 import '../../components/primary_btn.dart';
 import '../../helper/keyboard_util.dart';
@@ -163,7 +164,10 @@ class _AuthScreenState extends State<AuthScreen> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: IconButton(
-                              onPressed: () {},
+                              onPressed: () {showSimpleNotification(
+                                    const Text("Add Google login"),
+                                    background: kcolorPrimary,
+                                    position: NotificationPosition.bottom);},
                               icon: Image.asset('assets/images/google.png'),
                             ),
                           ),
@@ -175,7 +179,10 @@ class _AuthScreenState extends State<AuthScreen> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: IconButton(
-                              onPressed: () {},
+                              onPressed: () {showSimpleNotification(
+                                    const Text("Add Twitter login"),
+                                    background: kcolorPrimary,
+                                    position: NotificationPosition.bottom);},
                               icon: Image.asset('assets/images/twitter.png'),
                             ),
                           ),
@@ -187,8 +194,17 @@ class _AuthScreenState extends State<AuthScreen> {
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: IconButton(
-                              onPressed: () {},
-                              icon: Image.asset('assets/images/apple.png'),
+                              onPressed: () {
+                                // show a notification at top of screen.
+                                showSimpleNotification(
+                                    const Text("Add facebook login"),
+                                    background: kcolorPrimary,
+                                    position: NotificationPosition.bottom);
+                              },
+                              icon: const Icon(
+                                Icons.facebook_rounded,
+                                color: Color(0xFF1877F2),
+                              ),
                             ),
                           ),
                         ),

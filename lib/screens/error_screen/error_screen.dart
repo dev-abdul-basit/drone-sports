@@ -43,13 +43,13 @@ class _ErrorScreenState extends State<ErrorScreen> {
 
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => BottomMenuTabs()),
+        MaterialPageRoute(builder: (context) => const BottomMenuTabs()),
       );
     } else {
       // Navigate to the error page
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => ErrorScreen()),
+        MaterialPageRoute(builder: (context) => const ErrorScreen()),
       );
     }
   }

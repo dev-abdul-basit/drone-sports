@@ -2,7 +2,6 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:drone_sports/constants.dart';
 import 'package:drone_sports/screens/error_screen/error_screen.dart';
 import 'package:drone_sports/screens/welcome_screen/welcome_screen.dart';
-import 'package:drone_sports/tabs.dart';
 
 import 'package:flutter/material.dart';
 
@@ -49,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
       // Navigate to the error page
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => ErrorScreen()),
+        MaterialPageRoute(builder: (context) => const ErrorScreen()),
       );
     }
   }

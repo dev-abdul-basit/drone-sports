@@ -39,6 +39,7 @@ dependencies:
   flutter_svg: ^2.0.5
   connectivity_plus: ^3.0.6
   better_player: ^0.0.83
+  overlay_support: ^2.1.0
   
 
 dev_dependencies:

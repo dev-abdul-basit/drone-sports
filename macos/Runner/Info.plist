@@ -28,5 +28,12 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<!-- Better player config -->
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+   <string>UIInterfaceOrientationPortrait</string>
+   <string>UIInterfaceOrientationLandscapeLeft</string>
+   <string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
 </dict>
 </plist>
